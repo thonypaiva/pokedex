@@ -1,0 +1,103 @@
+*{
+    margin: 0 ;
+    padding: 0; 
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-content: center;
+    background-image: url(./assets/fondo.png);
+    background-size: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+    animation: colorcito  7s ease infinite;
+    background-color: black;
+    box-shadow: 1px 5px 15px 5px  #d16b6b;
+}
+
+
+.container--card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 15px;
+    align-items: center;
+    border-radius: 12px;
+    opacity: 1;
+}
+.card--article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 230px;
+    height: 300px;
+    border-radius: 12px;
+    opacity: 1;
+}
+
+.card--article .img--container{
+    width: 90px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.card--article p{
+    font-size: 16px;
+    font-family: system-ui;
+    margin-top: 5px;
+}
+
+.card--article h4{
+    font-size: 20px;
+    color: #000000c5;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+@keyframes colorcito {
+    0%{
+        color: antiquewhite;
+    }
+    10%{
+        color: blue;
+    }
+    20%{
+        color: black;
+    }
+    30%{
+        color: burlywood;
+    }
+    40%{
+        color: chartreuse;
+    }
+    50%{
+        color: crimson;
+    }
+    60%{
+        color: darkslateblue;
+    }
+    70%{
+        color: hotpink;
+    }
+    80%{
+        color: firebrick;
+    }
+    90%{
+        color: lightcoral;
+    }
+    100%{
+        color: white;
+    }
+
+}
